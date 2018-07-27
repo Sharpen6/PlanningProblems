@@ -1,0 +1,4 @@
+*.sat
+*.sas
+*K*.pddl
+*CPORoutputBestCase.txt
