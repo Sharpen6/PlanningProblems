@@ -1,6 +1,6 @@
 (define 
-(problem Button-1)
-(:domain Button-1)
+(problem Button-2)
+(:domain Button-2)
 (:goal (and (Button-pushed b0) (Button-pushed b1) (Button-pushed b2)))
 (:init
 	(and
@@ -22,7 +22,7 @@
 	
 	(green b0)
 	(yellow b1)
-	(green b2)
+	(yellow b2)
 	
 	(oneof (Button-at b0 p1-1) (Button-pushed b0))
 	(oneof (Button-at b1 p2-1) (Button-pushed b1))
