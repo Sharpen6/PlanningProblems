@@ -86,22 +86,22 @@
 		(empty rover1store)
 
 
-	(unknown (visible_from objective1 waypoint0))
-	(unknown (visible_from objective1 waypoint4))
-	(unknown (visible_from objective1 waypoint5))
+	;(unknown (visible_from objective1 waypoint0))
+	;(unknown (visible_from objective1 waypoint4))
+	;(unknown (visible_from objective1 waypoint5))
 	(oneof
          (visible_from objective1 waypoint0)
          (visible_from objective1 waypoint4)
          (visible_from objective1 waypoint5)
 	)
 
-	(unknown (at_soil_sample waypoint3))
-	(unknown (at_soil_sample waypoint4))
-	(unknown (at_soil_sample waypoint5))
+	;(unknown (at_soil_sample waypoint3))
+	;(unknown (at_soil_sample waypoint4))
+	;(unknown (at_soil_sample waypoint5))
 	
-	(unknown (at_rock_sample waypoint2))
-	(unknown (at_rock_sample waypoint4))
-	(unknown (at_rock_sample waypoint5))
+	;(unknown (at_rock_sample waypoint2))
+	;(unknown (at_rock_sample waypoint4))
+	;(unknown (at_rock_sample waypoint5))
 	(oneof
 		(at_soil_sample waypoint3)
 		(at_soil_sample waypoint4)

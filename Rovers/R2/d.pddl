@@ -1,7 +1,7 @@
 (define (domain Rover)
 (:types rover waypoint store camera mode lander objective)
 (:constants
-	rover0 rover1 - rover
+	rover0 - rover
 )
 (:predicates (at ?x - rover ?y - waypoint) 
              (at_lander ?x - lander ?y - waypoint)
@@ -121,21 +121,6 @@
                         (not (at_soil_sample ?p))
                    ))
 				   
-(:action sample-rock
-:parameters (?s - store ?p - waypoint)
-:precondition (and (at rover0 ?p) 
-				   (at rover1 ?p) 
-                   (at_rock_sample ?p) 
-                   (equipped_for_rock_analysis rover0) 
-				   (equipped_for_rock_analysis rover1) 
-                   (store_of ?s rover0)
-                   (empty ?s)
-		)
-:effect (and	(not (empty ?s)) 
-                        (full ?s) 
-                        (have_rock_analysis rover0); ?p) 
-                        (not (at_rock_sample ?p))
-                   ))
 (:action drop
 :parameters (?x - rover ?y - store)
 :precondition (and 

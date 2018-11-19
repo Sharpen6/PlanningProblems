@@ -56,10 +56,10 @@
 		(supports camera0 colour)
 		(supports camera0 high_res)
 		
-	(unknown (visible_from objective1 waypoint0))
-	(unknown (visible_from objective1 waypoint1))
-	(unknown (visible_from objective1 waypoint2))
-	(unknown (visible_from objective1 waypoint3))
+	;(unknown (visible_from objective1 waypoint0))
+	;(unknown (visible_from objective1 waypoint1))
+	;(unknown (visible_from objective1 waypoint2))
+	;(unknown (visible_from objective1 waypoint3))
 
 
 	(oneof
